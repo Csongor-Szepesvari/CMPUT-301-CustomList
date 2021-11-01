@@ -34,13 +34,15 @@ class CustomListTest {
         City city = new City("Regina", "Saskatchewan");
         assertFalse(list.hasCity(city));
     }
-    /*
+
     @Test
-    public void deleteCity(){
+    public void deleteCity() throws Exception{
         list.addCity(new City("Halifax", "NS"));
         int listSize = list.getCount();
 
-    }*/
+        list.deleteCity(new City("Halifax", "NS"));
+        assertEquals(0, list.getCount());
+    }
 
 
 
