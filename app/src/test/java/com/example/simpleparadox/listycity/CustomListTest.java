@@ -36,7 +36,7 @@ class CustomListTest {
     }
 
     @Test
-    public void deleteCity() throws Exception{
+    public void testDeleteCity() throws Exception{
         list.addCity(new City("Halifax", "NS"));
         int listSize = list.getCount();
 
